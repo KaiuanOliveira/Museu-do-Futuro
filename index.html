@@ -45,55 +45,105 @@
       </article>
 
       <!-- Invencoes -->
-      <article id="invencoes">
-        <div class="elementosInvencoes">
-          <figure>
-            <img src="img/Alexa.jpg" alt="Imagem Alexa" />
-            <figcaption>Amazon Alexa</figcaption>
-          </figure>
-          <p>
-            A Alexa é uma assistente virtual que transforma qualquer casa em um
-            ambiente inteligente. Basta usar a voz para tocar músicas, acender
-            luzes, controlar aparelhos ou até pedir comida. Integrada a
-            dispositivos como o Echo Dot, ela aprende com você e se adapta à sua
-            rotina. É tecnologia pensada para facilitar o dia a dia — do
-            despertador ao “boa noite”, tudo fica no comando da sua voz.
-          </p>
+      <section id="containerInvencoes">
+        <h2>Invencoes Futuristas</h2>
+        <div id="listaInvencoes">
+          <article class="elementosInvencoes">
+            <figure>
+              <img src="img/Alexa.jpg" alt="Imagem Alexa" />
+              <figcaption></figcaption>
+            </figure>
+            <div class="textoimg">
+              <h3>Amazon Alexa</h3>
+              <p>
+                A Alexa é uma assistente virtual que transforma qualquer casa em
+                um ambiente inteligente. Basta usar a voz para tocar músicas,
+                acender luzes, controlar aparelhos ou até pedir comida.
+                Integrada a dispositivos como o Echo Dot, ela aprende com você e
+                se adapta à sua rotina. É tecnologia pensada para facilitar o
+                dia a dia — do despertador ao “boa noite”, tudo fica no comando
+                da sua voz.
+              </p>
+            </div>
+          </article>
+          <article class="elementosInvencoes">
+            <figure>
+              <img
+                src="img/celularDobravel.jpg"
+                alt="Imagem Celular dobravel"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <div class="textoimg">
+              <h3>Samsung Galaxy Z Fold</h3>
+              <p>
+                Samsung Galaxy Z Fold O Galaxy Z Fold é um salto no design dos
+                smartphones. Com sua tela dobrável, ele funciona como celular e
+                tablet ao mesmo tempo, oferecendo produtividade e entretenimento
+                de um jeito inovador. Quando fechado, é compacto e prático;
+                aberto, vira uma tela ampla ideal para multitarefas, vídeos e
+                jogos. A Samsung uniu tecnologia avançada e elegância para
+                transformar o que conhecemos como “telefone”.
+              </p>
+            </div>
+          </article>
+          <article class="elementosInvencoes">
+            <figure>
+              <img src="img/oculosVirtual.jpg" alt="Imagem Oculos Virtual" />
+              <figcaption></figcaption>
+            </figure>
+            <div class="textoimg">
+              <h3>Apple Vision Pro</h3>
+              <p>
+                Apple Vision Pro Os Apple Vision Pro representam uma nova era na
+                forma como interagimos com tecnologia. Combinando realidade
+                aumentada e virtual, esses óculos criam uma experiência imersiva
+                que vai além dos limites de uma tela. Seja para assistir filmes
+                em um cinema virtual, trabalhar com múltiplas janelas flutuantes
+                ou explorar ambientes 3D, tudo acontece com comandos por gestos,
+                olhos e voz. É como ter um computador completo... no rosto.
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="elementosInvencoes">
-          <figure>
-            <img src="img/celularDobravel.jpg" alt="Imagem Celular dobravel" />
-            <figcaption>Samsung Galaxy Z Fold</figcaption>
-          </figure>
-          <p>
-            O Galaxy Z Fold é um salto no design dos smartphones. Com sua tela
-            dobrável, ele funciona como celular e tablet ao mesmo tempo,
-            oferecendo produtividade e entretenimento de um jeito inovador.
-            Quando fechado, é compacto e prático; aberto, vira uma tela ampla
-            ideal para multitarefas, vídeos e jogos. A Samsung uniu tecnologia
-            avançada e elegância para transformar o que conhecemos como
-            “telefone”.
-          </p>
-        </div>
-        <div class="elementosInvencoes">
-          <figure>
-            <img src="img/oculosVirtual.jpg" alt="Imagem Oculos Virtual" />
-            <figcaption>Apple Vision Pro</figcaption>
-          </figure>
-          <p>
-            Os Apple Vision Pro representam uma nova era na forma como
-            interagimos com tecnologia. Combinando realidade aumentada e
-            virtual, esses óculos criam uma experiência imersiva que vai além
-            dos limites de uma tela. Seja para assistir filmes em um cinema
-            virtual, trabalhar com múltiplas janelas flutuantes ou explorar
-            ambientes 3D, tudo acontece com comandos por gestos, olhos e voz. É
-            como ter um computador completo... no rosto.
-          </p>
-        </div>
-      </article>
+      </section>
 
       <!-- Formulario -->
-      <form></form>
+      <form>
+        <div id="formNome">
+          <label for="nome">Nome:</label>
+          <input
+            type="text
+        "
+            id="nome"
+            name="nome"
+            required
+          />
+        </div>
+        <div id="formEmail">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@exemplo.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="invencaoFavorita">Qual invencao voce mais gostou?</label>
+          <select name="invencaoFavorita" id="invencaoFavorita">
+            <option value="">Selecione uma</option>
+            <option value="">a decidir</option>
+            <option value="">a decidir</option>
+            <option value="">a decidir</option>
+          </select>
+        </div>
+        <div id="sugestao"></div>
+        <label for="sugestao"></label>
+        <textarea name="sugestao" id="sugestao"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </main>
 
     <!-- Rodapé -->
