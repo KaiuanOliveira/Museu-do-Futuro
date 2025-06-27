@@ -2,7 +2,12 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+}
+* h1,
+h2,
+h3,
+p {
+  font-style: italic;
 }
 body {
   background-color: #1c1c1c;
@@ -15,17 +20,27 @@ ul {
 a {
   text-decoration: none;
   transition: 0.4s;
-  color: aliceblue;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 a:hover {
   color: #1e90ff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
 #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 2.5rem 3rem;
   align-items: center;
+  border-bottom: 2px solid #1e90ff;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
 }
 
 #navlinks {
@@ -34,15 +49,26 @@ a:hover {
 }
 
 /* Apresentacao */
+main {
+  margin-top: 107px;
+}
+
 #boasVindas img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
+  border-bottom: 2px solid #1e90ff;
+  background-color: #4f4f4f;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
 }
 
-#boasVindas figcaption {
+#boasVindas h3 {
   text-align: center;
   font-size: 1.4rem;
-  margin: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
 #boasVindas p {
@@ -51,6 +77,8 @@ a:hover {
   line-height: 1.6;
   font-size: 20px;
   text-align: center;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
 /* invencoes */
@@ -60,6 +88,7 @@ a:hover {
   border-radius: 20px;
   border: 2px solid #1e90ff;
   background-color: #4f4f4f;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
 }
 
 #containerInvencoes h2 {
@@ -97,4 +126,82 @@ a:hover {
   font-size: 18px;
   line-height: 1.6;
   padding: 25px;
+}
+
+/* aside */
+form {
+  width: 63rem;
+  margin: 5rem auto;
+  border: 2px solid #1e90ff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
+}
+
+form div {
+  margin: 1rem;
+}
+
+form input,
+form select,
+form textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
+  color: #1e90ff;
+  font-family: sans-serif;
+}
+
+form textarea {
+  height: 5rem;
+}
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+}
+
+form input {
+  height: 2rem;
+}
+
+form h3 {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+form button {
+  height: 3rem;
+  width: 15rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1e90ff;
+  transform: translateY(-3px);
+}
+
+#formBotao {
+  text-align: center;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  background-color: #4f4f4f;
+  border-top: 2px solid #1e90ff;
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.3);
+  padding-top: 2rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
